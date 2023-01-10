@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag kskarthik/nexial-core:latest
     - name: Authenticate to Docker Hub
-      run: docker login -u kskarthik -p $DOCKER_HUB_PWD
+      run: docker login -u kskarthik -p ${{ secrets.DOCKER_HUB_PWD }}
     - name: Push Docker Image to Hub
       run: docker push kskarthik/nexial-core:latest
