@@ -1,7 +1,6 @@
 FROM amazoncorretto:19-alpine
 
-ENV NEXIAL_VER=4.4_1525 \
-		NEXIAL_INSTALLER_VER=1.4.7 \
+ENV NEXIAL_VER=4.5_1534 \
 		NEXIAL_HOME=/root/nexial-core \
 		PATH=/root/nexial-core/bin:$PATH
 
