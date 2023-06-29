@@ -13,6 +13,7 @@ WORKDIR /home/nexial-user/
 
 RUN wget -O nexial.zip https://github.com/nexiality/nexial-core/releases/download/nexial-core-v$NEXIAL_VER/nexial-core-$NEXIAL_VER.zip \
 		&& unzip -q nexial.zip -d nexial-core \
+		&& mkdir projects\
 		&& rm nexial.zip
 
 ENV NEXIAL_HOME=/home/nexial-user/nexial-core \
