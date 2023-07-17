@@ -21,4 +21,5 @@ ENV NEXIAL_HOME=/home/nexial-user/nexial-core \
 		FIREFOX_BIN=/usr/bin/firefox \
 		CHROME_BIN=/usr/bin/chromedriver
 
-ENTRYPOINT [ "tail", "-F", "/dev/null" ]
+# ENTRYPOINT [ "tail", "-F", "/dev/null" ]
+ENTRYPOINT [ "nexial.sh" ]
