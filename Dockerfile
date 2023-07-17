@@ -22,4 +22,4 @@ ENV NEXIAL_HOME=/home/nexial-user/nexial-core \
 		CHROME_BIN=/usr/bin/chromedriver
 
 # ENTRYPOINT [ "tail", "-F", "/dev/null" ]
-ENTRYPOINT [ "/bin/bash" ]
+CMD [ "/bin/bash" ]
