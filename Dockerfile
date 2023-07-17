@@ -18,8 +18,8 @@ RUN wget -O nexial.zip https://github.com/nexiality/nexial-core/releases/downloa
 
 ENV NEXIAL_HOME=/home/nexial-user/nexial-core \
 		PATH=/home/nexial-user/nexial-core/bin:$PATH \
-		FIREFOX_BIN=/usr/bin/firefox \
-		CHROME_BIN=/usr/bin/chromedriver
+		FIREFOX_BIN=/usr/bin/firefox
+		# CHROME_BIN=/usr/bin/chromedriver
 
 # ENTRYPOINT [ "tail", "-F", "/dev/null" ]
 CMD [ "/bin/bash" ]
